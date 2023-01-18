@@ -1,0 +1,25 @@
+.city {
+  font-size: larger;
+  font-weight: bold;
+  height: 30px;
+  padding: 10px;
+}
+.info {
+  font-weight: bold;
+  color: blueviolet;
+}
+.infos {
+  padding-bottom: 20px;
+}
+.temp {
+  font-size: large;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.days {
+  font-weight: bold;
+}
+.moderate {
+  font-weight: bold;
+  color: blueviolet;
+}
