@@ -13,43 +13,56 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-7">
-          <form id="cities-form">
-            <input
-              type="text"
-              id="city-input"
-              placeholder="Enter a city....."
-              autocomplete="off"
-              autofocus="on"
-            />
-            <input id="search-city" type="submit" value="Search" />
-          </form>
-        </div>
-        <div class="col">
-          <button id="get-location">Current Location</button>
-        </div>
-      </div>
-      <div>
+    <div class="container cave">
+      <div class="innerCave">
         <div class="row">
-          <div id="city-label" class="col-9 city">-</div>
-          <div class="col temp"><span id="temp">-</span>°</div>
+          <div class="col-7">
+            <form id="cities-form">
+              <input
+                type="text"
+                id="city-input"
+                placeholder="Enter a city....."
+                autocomplete="off"
+                autofocus="on"
+              />
+              <input
+                class="check"
+                id="search-city"
+                type="submit"
+                value="Search"
+              />
+            </form>
+          </div>
+          <div class="col">
+            <button class="location" id="get-location">Current Location</button>
+          </div>
         </div>
-        <div class="row">
-          <div id="my-date" class="col info"></div>
-          <div id="weather-text" class="moderate"></div>
-        </div>
-        <div class="row">
-          <div class="col info infos">
-            Humidity: <span id="humid">0</span>% Wind:
-            <span id="windy">0</span>m/s
+        <div>
+          <div class="row">
+            <div id="city-label" class="col-9 city">-</div>
+            <div class="col temp">
+              <span id="temp">-</span>
+              <a class="active tempLink" id="cel-link" href="#">°C</a>|
+              <a class="active tempLink" id="fah-link" href="#">°F</a>
+            </div>
+          </div>
+          <div class="row">
+            <div id="my-date" class="col info"></div>
+            <div id="weather-text" class="moderate"></div>
+          </div>
+          <div class="row">
+            <div class="col info infos">
+              Humidity: <span id="humid">0</span>% Wind:
+              <span id="windy">0</span>m/s
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <a href="https://github.com/Ogooezeani/weather-app">Open-source code</a> By
-    Ogochukwu Ezeani
+    <a class="sourceCode" href="https://github.com/Ogooezeani/weather-app"
+      >Open-source code</a
+    >
+    By Ogochukwu Ezeani
     <script src="src/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </body>
